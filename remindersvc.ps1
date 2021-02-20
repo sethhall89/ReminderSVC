@@ -126,7 +126,7 @@ $dbdata = New-Object System.Data.DataSet
 $numberofdatasets = $dbdataadapter.Fill($dbdata)
 
 $creds = Get-Credential
-$from = New-Object System.Net.Mail.MailAddress("reminders@mcsa365lab.com","SethHall Reminder Service")
+$from = New-Object System.Net.Mail.MailAddress("EMAILADDRESS","Reminder Service")
 Send-MailMessage -From $from -SmtpServer smtp.office365.com -Credential $creds -UseSsl -To $dbdata.Tables[0].Rows[0].Recipient -Body $dbdata.Tables[0].Rows[0].Message -Port 587 -Subject "Reminder Service"
 $dbconnection.close()
 Write-Host `

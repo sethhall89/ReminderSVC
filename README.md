@@ -44,7 +44,11 @@ Program allows you to do the following:
 - Exits program.
 
 You will possibly need to make the following changes:
+
 Line 2 - MySQL Connector path
+
 Line 4 - Update your connection string with your MySQL instance details
+
 Line 129 - The FROM address and DISPLAYNAME
+
 Line 130 - SMTPSERVER, PORT, SUBJECT, SSL

@@ -2,9 +2,13 @@
 MySQL and Powershell program to send text/email reminders.
 
 <b>Requirements:</b>
+
 MySQL instance
+
 SMTP account/server
+
 MySQL Connector - https://dev.mysql.com/downloads/connector/net/
+
 Powershell
 
 <b>MySQL setup:</b>
